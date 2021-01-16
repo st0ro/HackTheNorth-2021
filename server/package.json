@@ -1,0 +1,24 @@
+{
+  "name": "hackthenorth-2021",
+  "version": "1.0.0",
+  "description": "Hack the North 2021 submssion",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/st0ro/HackTheNorth-2021.git"
+  },
+  "author": "st0ro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/st0ro/HackTheNorth-2021/issues"
+  },
+  "homepage": "https://github.com/st0ro/HackTheNorth-2021#readme",
+  "dependencies": {
+    "async": "^3.2.0",
+    "express": "^4.17.1",
+    "pg": "^8.5.1"
+  }
+}
