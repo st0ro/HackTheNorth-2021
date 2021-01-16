@@ -22,12 +22,14 @@ class InjectApp extends Component {
 }
 
 var oldHref = document.location.href;
+oldHref = oldHref.substring(0, oldHref.indexOf('@'));
+console.log(oldHref);
 window.onload = function() {
     var bodyList = document.querySelector("body")
         ,observer = new MutationObserver(function(mutations) {
             mutations.forEach(function(mutation) {
-                if (oldHref != document.location.href) {
-                    oldHref = document.location.href;
+                if (oldHref != document.location.href.substring(0, document.location.href.indexOf('@'))) {
+                    oldHref = document.location.href.substring(0, document.location.href.indexOf('@'));
                     const injectDOM = document.createElement('div');
                     injectDOM.className = 'inject-react';
                     injectDOM.style.textAlign = 'left';
