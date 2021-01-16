@@ -1,6 +1,6 @@
 {
-  "short_name": "My Extension",
-  "name": "My Extension",
+  "short_name": "COVID-19 Reviews",
+  "name": "COVID-19 Reviews App",
   "version": "1.1",
   "manifest_version": 2,
   "background": {
