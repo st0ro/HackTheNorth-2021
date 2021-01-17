@@ -7,7 +7,7 @@
     "16": "../src/images/mask-16.png",
     "48": "../src/images/mask-48.png",
     "128": "../src/images/mask-128.png"
-  }
+  },
   "background": {
     "scripts": ["app/background.js"]
   },
