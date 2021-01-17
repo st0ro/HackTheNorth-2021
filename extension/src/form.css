@@ -1,6 +1,7 @@
 table {
     border-collapse: collapse;
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 .header {
     padding: 15px 10px 15px 10px;
