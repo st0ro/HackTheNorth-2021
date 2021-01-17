@@ -68,15 +68,19 @@ class Form extends Component {
                 <tr>
                 <td class="category">Is hand sanitizer provided to customers?</td>
                   <td class="bool-q">
-                    <input name="sanitizer" type="radio" value="1" required>Yes</input>
-                    <input name="sanitizer" type="radio" value="0">No</input>
+                    <label for="sanitizer-y">Yes</label>
+                    <input id="sanitizer-y" name="sanitizer" type="radio" value="1" required></input>
+                    <label for="sanitizer-n">No</label>
+                    <input id="sanitizer-n" name="sanitizer" type="radio" value="0"></input>
                   </td>
                 </tr>
                 <tr>
                   <td class="category">Are masks provided to customers?</td>
                   <td class="bool-q">
-                    <input name="masks-provided" type="radio" value="1" required>Yes</input>
-                    <input name="masks-provided" type="radio" value="0">No</input>
+                    <label for="masks-provided-y">Yes</label>
+                    <input id="masks-provided-y" name="masks-provided" type="radio" value="1" required></input>
+                    <label for="masks-provided-n">No</label>
+                    <input id="masks-provided-n" name="masks-provided" type="radio" value="0"></input>
                   </td>
                 </tr>
                 <tr>
@@ -115,19 +119,11 @@ class Form extends Component {
                 </tr>
                 <tr>
                   <td class="category">Does this location adhere to maximum occupancy regulations?</td>
-                  <td>
-                    <span class="star-rating">
-                      <input id="max-occ5" ame="max-occ" type="radio" value="5" required></input>
-                      <label for="max-occ5">5</label>
-                      <input id="max-occ4" name="max-occ" type="radio" value="4"></input>
-                      <label for="max-occ4">4</label>
-                      <input id="max-occ3" name="max-occ" type="radio" value="3"></input>
-                      <label for="max-occ3">3</label>
-                      <input id="max-occ2" name="max-occ" type="radio" value="2"></input>
-                      <label for="max-occ2">2</label>
-                      <input id="max-occ1" name="max-occ" type="radio" value="1"></input>
-                      <label for="max-occ1">1</label>
-                    </span>
+                  <td class="bool-q">
+                    <label for="max-occ-y">Yes</label>
+                    <input id="max-occ-y" name="sanitizer" type="radio" value="1" required></input>
+                    <label for="max-ccc-n">No</label>
+                    <input id="max-occ-n" name="sanitizer" type="radio" value="0"></input>
                   </td>
                 </tr>
               </tbody>
