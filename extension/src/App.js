@@ -24,8 +24,12 @@ class App extends Component {
         <p className="App-intro">
           The COVID-19 pandemic is pretty scary. Find the stores that can provide you with the safest environment and share your own experiences with other users.
         </p>
+        <p className="App-intro">
+          Help others find safe spaces too! Rate the current location on its adherence to COVID-19 safety precautions and regulations.
+        </p>
         <Form></Form>
         <Info></Info>
+        <img class="App-bottom-image" src="images/undraw_location_review_dmxd.png"/>
       </div>
     );
   }

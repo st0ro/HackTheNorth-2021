@@ -15,11 +15,18 @@
 
 .App-title {
   font-size: 2.5em;
+  font-weight: normal;
 }
 
 .App-intro {
   font-family: Roboto, Arial, sans-serif;
   font-size: large;
+  font-weight: normal;
+}
+
+.App-bottom-image {
+  max-width: 100%;
+  height: auto;
 }
 
 @keyframes App-logo-spin {
