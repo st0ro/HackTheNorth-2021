@@ -1,13 +1,18 @@
 const express = require('express');
+const https = require('https');
 const pg = require('pg');
 const fs = require('fs');
 const bodyParser = require ('body-parser');
 const multer = require('multer');
 var upload = multer();
 
-const server = express();
-server.use(bodyParser.json());
-server.use(bodyParser.urlencoded({extended: true}));
+const key = fs.readFileSync('./key.pem');
+const cert = fs.readFileSync('./cert.pem');
+
+const app = express();
+const server = https.createServer({key: key, cert:cert}, app);
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 const port = 34343;
 
 const dbconf = {
@@ -19,7 +24,7 @@ const dbconf = {
 
 let pool = new pg.Pool(dbconf);
 
-server.get('/reviews/', function(req, res){
+app.get('/reviews/', function(req, res){
     let address = req.query.address, placeName = req.query.placeName;
     console.log(`Recieved a GET request for address ${address} and place ${placeName}.`);
     pool.connect(function(err, client, done){
@@ -44,7 +49,7 @@ server.get('/reviews/', function(req, res){
     });
 });
 
-server.post('/reviews/', upload.none(), function(req, res){
+app.post('/reviews/', upload.none(), function(req, res){
     console.log('Recieved a POST request for reviews.');
     let address = req.body.address, placeName = req.body.placeName, rating = req.body.rating;
     let empMasks = req.body.empMasks, empDist = req.body.empDist, custMasks = req.body.custMasks, custDist = req.body.custDist;
