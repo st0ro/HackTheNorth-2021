@@ -32,7 +32,7 @@ class Form extends Component {
                   </td>
                 </tr>
                 <tr>
-                  <td class="category">Employees Wearing Masks</td>
+                  <td class="category">Are employees wearing masks?</td>
                   <td>
                     <span class="star-rating">
                       <input id="emp-masks5" name="emp-masks" type="radio" value="5" required></input>
@@ -49,7 +49,7 @@ class Form extends Component {
                   </td>
                 </tr>
                 <tr>
-                  <td class="category">Employees Social Distancing</td>
+                  <td class="category">How well are employees observing social distancing?</td>
                   <td>
                     <span class="star-rating">
                       <input id="emp-distancing5" name="emp-distancing" type="radio" value="5" required></input>
@@ -66,24 +66,21 @@ class Form extends Component {
                   </td>
                 </tr>
                 <tr>
-                  <td class="category">Hand Sanitizer Provided</td>
-                  <td>
-                    <span class="star-rating">
-                      <input id="sanitizer5" name="sanitizer" type="radio" value="5" required></input>
-                      <label for="sanitizer5">5</label>
-                      <input id="sanitizer4" name="sanitizer" type="radio" value="4"></input>
-                      <label for="sanitizer4">4</label>
-                      <input id="sanitizer3" name="sanitizer" type="radio" value="3"></input>
-                      <label for="sanitizer3">3</label>
-                      <input id="sanitizer2" name="sanitizer" type="radio" value="2"></input>
-                      <label for="sanitizer2">2</label>
-                      <input id="sanitizer1" name="sanitizer" type="radio" value="1"></input>
-                      <label for="sanitizer1">1</label>
-                    </span>
+                <td class="category">Is hand sanitizer provided to customers?</td>
+                  <td class="bool-q">
+                    <input name="sanitizer" type="radio" value="1" required>Yes</input>
+                    <input name="sanitizer" type="radio" value="0">No</input>
                   </td>
                 </tr>
                 <tr>
-                  <td class="category">Customers Provided Masks</td>
+                  <td class="category">Are masks provided to customers?</td>
+                  <td class="bool-q">
+                    <input name="masks-provided" type="radio" value="1" required>Yes</input>
+                    <input name="masks-provided" type="radio" value="0">No</input>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="category">Are customers wearing masks?</td>
                   <td>
                     <span class="star-rating">
                       <input id="cust-masks5" name="cust-masks" type="radio" value="5" required></input>
@@ -100,7 +97,7 @@ class Form extends Component {
                   </td>
                 </tr>
                 <tr>
-                  <td class="category">Customers Social Distancing</td>
+                  <td class="category">How well are customers observing social distancing?</td>
                   <td>
                     <span class="star-rating">
                       <input id="cust-distancing5" name="cust-distancing" type="radio" value="5" required></input>
@@ -117,7 +114,7 @@ class Form extends Component {
                   </td>
                 </tr>
                 <tr>
-                  <td class="category">Adherance To Maximum Occupancy</td>
+                  <td class="category">Does this location adhere to maximum occupancy regulations?</td>
                   <td>
                     <span class="star-rating">
                       <input id="max-occ5" ame="max-occ" type="radio" value="5" required></input>
