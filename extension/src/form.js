@@ -21,7 +21,7 @@ class Form extends Component {
                       <input id="overall5" name="overall" type="radio" value="5" required></input>
                       <label for="overall5">5</label>
                       <input id="overall4" name="overall" type="radio" value="4"></input>
-                      <label for="overall3">4</label>
+                      <label for="overall4">4</label>
                       <input id="overall3" name="overall" type="radio" value="3"></input>
                       <label for="overall3">3</label>
                       <input id="overall2" name="overall" type="radio" value="2"></input>
@@ -121,9 +121,9 @@ class Form extends Component {
                   <td class="category">Does this location adhere to maximum occupancy regulations?</td>
                   <td class="bool-q">
                     <label for="max-occ-y">Yes</label>
-                    <input id="max-occ-y" name="sanitizer" type="radio" value="1" required></input>
+                    <input id="max-occ-y" name="max-occ" type="radio" value="1" required></input>
                     <label for="max-ccc-n">No</label>
-                    <input id="max-occ-n" name="sanitizer" type="radio" value="0"></input>
+                    <input id="max-occ-n" name="max-ccc" type="radio" value="0"></input>
                   </td>
                 </tr>
               </tbody>
