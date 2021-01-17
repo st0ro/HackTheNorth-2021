@@ -2,6 +2,8 @@ const express = require('express');
 const pg = require('pg');
 const fs = require('fs');
 const bodyParser = require ('body-parser');
+const multer = require('multer');
+var upload = multer();
 
 const server = express();
 server.use(bodyParser.json());
@@ -42,7 +44,7 @@ server.get('/reviews/', function(req, res){
     });
 });
 
-server.post('/reviews/', function(req, res){
+server.post('/reviews/', upload.none(), function(req, res){
     console.log('Recieved a POST request for reviews.');
     let address = req.body.address, placeName = req.body.placeName, rating = req.body.rating;
     let empMasks = req.body.empMasks, empDist = req.body.empDist, custMasks = req.body.custMasks, custDist = req.body.custDist;
