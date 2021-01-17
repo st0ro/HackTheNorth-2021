@@ -1,0 +1,29 @@
+.review-header {
+    background-color: #4287f5;
+    height: auto;
+    padding: 15px;
+    color: white;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 100;
+}
+
+.reviews-title {
+    padding: 15=0px;
+    font-size: 1.2em;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 100;
+}
+
+.reviews-overall {
+    padding: 5px 5px 10px 10px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 1.0em;
+    font-weight: 700;
+}
+
+.reviews-content {
+    padding: 5px 5px 10px 10px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 1.0em;
+    font-weight: normal;
+}

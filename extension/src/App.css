@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 
 .App-logo {
   padding: 10px;
@@ -19,7 +18,7 @@
 
 .App-title {
   padding: 15=0px;
-  font-size: 1.5em;
+  font-size: 2em;
   font-family: Roboto, Arial, sans-serif;
   font-weight: 100;
 }

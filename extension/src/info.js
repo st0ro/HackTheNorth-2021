@@ -3,11 +3,26 @@
 //json.parse  ????
 
 import React, { Component } from 'react';
+import "./info.css";
 
 class Info extends Component {
     render() {
         return (
-            <div>This is where the form will go</div>
+            <div id="reviews">
+				<div id="reviews-header">
+					<div class="reviews-title" dangerouslySetInnerHTML={{__html: `Score for ${"placeholder"}`}} />
+				</div>
+				<div class="reviews-overall" dangerouslySetInnerHTML={{__html: `Overall Rating: ${"placeholder"}/5`}} />
+				<div id="reviews-content">
+					<div dangerouslySetInnerHTML={{__html: `Social Distancing (Employees): ${"placeholder"}/5`}} />
+					<div dangerouslySetInnerHTML={{__html: `Mask Wearing (Employees): ${"placeholder"}/5`}} />
+					<div dangerouslySetInnerHTML={{__html: `Hand Sanitizer Provided: ${"placeholder"}`}} />
+					<div dangerouslySetInnerHTML={{__html: `Masks Provided: ${"placeholder"}`}} />
+					<div dangerouslySetInnerHTML={{__html: `Social Distancing (Customers): ${"placeholder"}/5`}} />
+					<div dangerouslySetInnerHTML={{__html: `Mask Wearing (Customers): ${"placeholder"}/5`}} />
+					<div dangerouslySetInnerHTML={{__html: `Adheres To Max. Occupancy: ${"placeholder"}`}} />
+				</div>
+			</div>
 
         );
     }
