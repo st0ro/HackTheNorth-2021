@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./form.css";
+import Thanks from './thanks.js';
 
 class Form extends Component {
     constructor() {
@@ -14,7 +15,8 @@ class Form extends Component {
           custDist: '',
           maxOcc: '',
           handSan: '',
-          masks: ''
+          masks: '',
+          isSubmitted: false
         };
         this.onChange = this.onChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
@@ -51,12 +53,14 @@ class Form extends Component {
         e.preventDefault();
         // get our form data out of state
         const { address, placeName, rating, empMasks, empDist, custMasks, custDist, maxOcc, handSan, masks} = this.state;
+        this.setState({isSubmitted: true})
         postReview({ address, placeName, rating, empMasks, empDist, custMasks, custDist, maxOcc, handSan, masks });
       }
     render() {
       const { address, placeName, rating, empMasks, empDist, custMasks, custDist, maxOcc, handSan, masks} = this.state;
         return (
           <div id="submit-review">
+            {this.state.isSubmitted && <Thanks/>}
             <form onSubmit={this.onSubmit}>
             <table>
               <thead>
