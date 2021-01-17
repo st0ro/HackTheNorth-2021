@@ -77,7 +77,7 @@ class Form extends Component {
                       <input onChange={this.onChange}id="overall5" name="rating" type="radio" value="5" required></input>
                       <label for="overall5">5</label>
                       <input onChange={this.onChange}id="overall4" name="rating" type="radio" value="4"></input>
-                      <label for="overall3">4</label>
+                      <label for="overall4">4</label>
                       <input onChange={this.onChange}id="overall3" name="rating" type="radio" value="3"></input>
                       <label for="overall3">3</label>
                       <input onChange={this.onChange}id="overall2" name="rating" type="radio" value="2"></input>
