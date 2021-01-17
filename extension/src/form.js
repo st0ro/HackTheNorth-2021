@@ -123,7 +123,7 @@ class Form extends Component {
                     <label for="max-occ-y">Yes</label>
                     <input id="max-occ-y" name="max-occ" type="radio" value="1" required></input>
                     <label for="max-ccc-n">No</label>
-                    <input id="max-occ-n" name="max-ccc" type="radio" value="0"></input>
+                    <input id="max-occ-n" name="max-occ" type="radio" value="0"></input>
                   </td>
                 </tr>
               </tbody>
