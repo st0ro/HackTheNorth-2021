@@ -2,6 +2,7 @@
 
 
 .App-logo {
+  padding: 10px;
   font-family: Roboto, Arial, sans-serif;
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -17,6 +18,7 @@
 }
 
 .App-title {
+  padding: 15=0px;
   font-size: 1.5em;
   font-family: Roboto, Arial, sans-serif;
   font-weight: normal;

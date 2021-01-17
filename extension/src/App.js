@@ -23,7 +23,7 @@ class App extends Component {
           <h1 className="App-title">COVID-19 Reviews</h1>
         </header>
         <p className="App-intro">
-          The COVID-19 pandemic is pretty scary. Find the stores that can provide you with the safest environment and share your own experiences with other users.
+          The COVID-19 pandemic is pretty scary. Find the stores that will provide you with the safest environment.
         </p>
         <p className="App-intro">
           Help others find safe spaces too! Rate the current location on its adherence to COVID-19 safety precautions and regulations.
