@@ -76,6 +76,11 @@ table {
     opacity : 1;
 }
 
+#submitButton {
+    text-align: center; 
+    vertical-align: middle;
+}
+
 input[type=submit] {
     padding: 10px 20px 10px 20px;
     background: #4287f5;

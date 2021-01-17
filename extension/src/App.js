@@ -5,8 +5,9 @@
 import React, { Component } from 'react';
 import logo from './newicon.svg';
 import './App.css';
-import Form from './form.js';
+import Form from './form.js'
 import Info from './info.js';
+import bottomImage from './images/undraw_location_review_dmxd.png';
 
 
 class App extends Component {
@@ -28,9 +29,9 @@ class App extends Component {
         <p className="App-intro">
           Help others find safe spaces too! Rate the current location on its adherence to COVID-19 safety precautions and regulations.
         </p>
-        <Form></Form>
         <Info></Info>
-        <img class="App-bottom-image" src="images/undraw_location_review_dmxd.png"/>
+        <Form></Form>
+        <img class="App-bottom-image" src={chrome.runtime.getURL("static/media/undraw_location_review_dmxd.png")}/>
       </div>
     );
   }

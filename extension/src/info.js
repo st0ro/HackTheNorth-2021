@@ -6,21 +6,42 @@ import React, { Component } from 'react';
 import "./info.css";
 
 class Info extends Component {
+	constructor() {
+        super();
+        this.state = {
+			address: '66 Crowfoot Terrace NW, Calgary, AB T3G 4J8',
+			placeName: 'Chapters',
+			rating: '5',
+			empMasks: '5',
+			empDist: '4',
+			custMasks: '4',
+			custDist: '4',
+			maxOcc: 'False',
+			handSan: 'True',
+			masks: 'True'
+		};
+		this.getInfo = this.getInfo.bind(this);
+	  }
+	
+	getInfo() {
+		//if get requests work
+	}
+	  
     render() {
         return (
             <div id="reviews">
 				<div id="reviews-header">
-					<div class="reviews-title" dangerouslySetInnerHTML={{__html: `Score for ${"placeholder"}`}} />
+					<div class="reviews-title" dangerouslySetInnerHTML={{__html: `Score for ${this.state.placeName}`}} />
 				</div>
-				<div class="reviews-overall" dangerouslySetInnerHTML={{__html: `Overall Rating: ${"placeholder"}/5`}} />
+				<div class="reviews-overall" dangerouslySetInnerHTML={{__html: `Overall Rating: ${this.state.rating}/5`}} />
 				<div id="reviews-content">
-					<div dangerouslySetInnerHTML={{__html: `Social Distancing (Employees): ${"placeholder"}/5`}} />
-					<div dangerouslySetInnerHTML={{__html: `Mask Wearing (Employees): ${"placeholder"}/5`}} />
-					<div dangerouslySetInnerHTML={{__html: `Hand Sanitizer Provided: ${"placeholder"}`}} />
-					<div dangerouslySetInnerHTML={{__html: `Masks Provided: ${"placeholder"}`}} />
-					<div dangerouslySetInnerHTML={{__html: `Social Distancing (Customers): ${"placeholder"}/5`}} />
-					<div dangerouslySetInnerHTML={{__html: `Mask Wearing (Customers): ${"placeholder"}/5`}} />
-					<div dangerouslySetInnerHTML={{__html: `Adheres To Max. Occupancy: ${"placeholder"}`}} />
+					<div dangerouslySetInnerHTML={{__html: `Social Distancing (Employees): ${this.state.empDist}/5`}} />
+					<div dangerouslySetInnerHTML={{__html: `Mask Wearing (Employees): ${this.state.empMasks}/5`}} />
+					<div dangerouslySetInnerHTML={{__html: `Hand Sanitizer Provided: ${this.state.handSan}`}} />
+					<div dangerouslySetInnerHTML={{__html: `Masks Provided: ${this.state.masks}`}} />
+					<div dangerouslySetInnerHTML={{__html: `Social Distancing (Customers): ${this.state.custDist}/5`}} />
+					<div dangerouslySetInnerHTML={{__html: `Mask Wearing (Customers): ${this.state.custMasks}/5`}} />
+					<div dangerouslySetInnerHTML={{__html: `Adheres To Max. Occupancy: ${this.state.maxOcc}`}} />
 				</div>
 			</div>
 

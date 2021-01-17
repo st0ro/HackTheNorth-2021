@@ -180,7 +180,7 @@ class Form extends Component {
                 </tr>
               </tbody>
               <tfoot>
-                <tr colspan="2">
+                <tr class="submitButton" colspan="2">
                   <td>
                     <div id="submit">
                       <input onChange={this.onChange}type="submit"></input>

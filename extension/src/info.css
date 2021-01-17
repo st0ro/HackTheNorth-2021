@@ -1,4 +1,4 @@
-.reviews-header {
+#reviews-header {
     background-color: #4287f5;
     height: auto;
     padding: 15px;
@@ -21,7 +21,7 @@
     font-weight: 700;
 }
 
-.reviews-content {
+#reviews-content {
     padding: 5px 5px 10px 10px;
     font-family: Roboto, Arial, sans-serif;
     font-size: 1.0em;
