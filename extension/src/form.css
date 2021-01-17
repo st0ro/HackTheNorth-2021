@@ -1,12 +1,11 @@
 table {
     border-collapse: collapse;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 .header {
     padding: 15px 10px 15px 10px;
-    font-family: "Product Sans", Roboto, Arial, sans-serif;
-    font-weight: normal;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 100;
     font-size: 1.2em;
     text-align: left;
     background-color: #4287f5;
@@ -27,6 +26,14 @@ table {
     font-family: Roboto, Arial, sans-serif;
     font-weight: normal;
     font-size: 1.0em;
+    text-align: left;
+    color: #000;
+}
+
+.bool-q {
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: normal;
+    font-size: medium;
     text-align: left;
     color: #000;
 }
@@ -73,7 +80,8 @@ input[type=submit] {
     padding: 10px 20px 10px 20px;
     background: #4287f5;
     color: #fff;
-    font-family: "Product Sans", Roboto, Arial, sans-serif;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 100;
     font-size: 1.0em;
     border: 0 none;
     text-align: center;

@@ -18,7 +18,24 @@ class Form extends Component {
         };
         this.onChange = this.onChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
+        this.componentDidMount = this.componentDidMount.bind(this);
+        this.timer = this.timer.bind(this);
       }
+
+      timer() {
+        var element1 = document.querySelector(".section-hero-header-title-title");
+        var element2 = document.querySelector("button[aria-label*=Address]").querySelector(".ugiz4pqJLAG__text");
+        if (element1 && element2) {
+          console.log("Exists!");
+          this.setState({address: element2.firstElementChild.textContent});
+          this.setState({placeName: element1.firstElementChild.textContent});
+        }
+      }
+
+      componentDidMount() {
+        var checkExist = setInterval(this.timer, 1000);
+      }
+      
 
       onChange(e){
         /*
@@ -34,7 +51,6 @@ class Form extends Component {
         e.preventDefault();
         // get our form data out of state
         const { address, placeName, rating, empMasks, empDist, custMasks, custDist, maxOcc, handSan, masks} = this.state;
-
         postReview({ address, placeName, rating, empMasks, empDist, custMasks, custDist, maxOcc, handSan, masks });
       }
     render() {
@@ -68,7 +84,7 @@ class Form extends Component {
                   </td>
                 </tr>
                 <tr>
-                  <td class="category">Employees Wearing Masks</td>
+                  <td class="category">Are employees wearing masks?</td>
                   <td>
                     <span class="star-rating">
                       <input onChange={this.onChange}id="emp-masks5" name="empMasks" type="radio" value="5" required></input>
@@ -85,7 +101,7 @@ class Form extends Component {
                   </td>
                 </tr>
                 <tr>
-                  <td class="category">Employees Social Distancing</td>
+                  <td class="category">How well are employees observing social distancing?</td>
                   <td>
                     <span class="star-rating">
                       <input onChange={this.onChange}id="emp-distancing5" name="empDist" type="radio" value="5" required></input>
@@ -102,24 +118,7 @@ class Form extends Component {
                   </td>
                 </tr>
                 <tr>
-                  <td class="category">Hand Sanitizer Provided</td>
-                  <td>
-                    <span class="star-rating">
-                      <input onChange={this.onChange}id="sanitizer5" name="HandSan" type="radio" value="5" required></input>
-                      <label for="sanitizer5">5</label>
-                      <input onChange={this.onChange}id="sanitizer4" name="HandSan" type="radio" value="4"></input>
-                      <label for="sanitizer4">4</label>
-                      <input onChange={this.onChange}id="sanitizer3" name="HandSan" type="radio" value="3"></input>
-                      <label for="sanitizer3">3</label>
-                      <input onChange={this.onChange}id="sanitizer2" name="HandSan" type="radio" value="2"></input>
-                      <label for="sanitizer2">2</label>
-                      <input onChange={this.onChange}id="sanitizer1" name="HandSan" type="radio" value="1"></input>
-                      <label for="sanitizer1">1</label>
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="category">Customers Wearing Masks</td>
+                  <td class="category">Are customers wearing masks?</td>
                   <td>
                     <span class="star-rating">
                       <input onChange={this.onChange}id="cust-masks5" name="custMasks" type="radio" value="5" required></input>
@@ -136,7 +135,7 @@ class Form extends Component {
                   </td>
                 </tr>
                 <tr>
-                  <td class="category">Customers Social Distancing</td>
+                  <td class="category">How well are customers observing social distancing?</td>
                   <td>
                     <span class="star-rating">
                       <input onChange={this.onChange}id="cust-distancing5" name="custDist" type="radio" value="5" required></input>
@@ -153,7 +152,7 @@ class Form extends Component {
                   </td>
                 </tr>
                 <tr>
-                  <td class="category">Adherance To Maximum Occupancy</td>
+                  <td class="category">Does this location adhere to maximum occupancy regulations?</td>
                   <td>
                     <span class="star-rating">
                       <input onChange={this.onChange}id="max-occ5" ame="max-occ" type="radio" value="5" required></input>
@@ -166,23 +165,6 @@ class Form extends Component {
                       <label for="max-occ2">2</label>
                       <input onChange={this.onChange}id="max-occ1" name="maxOcc" type="radio" value="1"></input>
                       <label for="max-occ1">1</label>
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="category">Masks Provided?</td>
-                  <td>
-                    <span class="star-rating">
-                      <input onChange={this.onChange}id="masks5" name="masks" type="radio" value="5" required></input>
-                      <label for="masks5">5</label>
-                      <input onChange={this.onChange}id="masks4" name="masks" type="radio" value="4"></input>
-                      <label for="masks4">4</label>
-                      <input onChange={this.onChange}id="masks3" name="masks" type="radio" value="3"></input>
-                      <label for="masks3">3</label>
-                      <input onChange={this.onChange}id="masks2" name="masks" type="radio" value="2"></input>
-                      <label for="masks2">2</label>
-                      <input onChange={this.onChange}id="masks1" name="masks" type="radio" value="1"></input>
-                      <label for="masks1">1</label>
                     </span>
                   </td>
                 </tr>
