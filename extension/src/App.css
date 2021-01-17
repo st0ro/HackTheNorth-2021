@@ -4,17 +4,19 @@
 }
 
 .App-header {
-  background-color: #222;
+  font-family: "Product Sans", Roboto, Arial, sans-serif;
+  background-color: #1871E8;
   height: 150px;
   padding: 20px;
   color: white;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 
 .App-intro {
+  font-family: Roboto, Arial, sans-serif;
   font-size: large;
 }
 
