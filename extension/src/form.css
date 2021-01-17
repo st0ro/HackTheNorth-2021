@@ -30,6 +30,14 @@ table {
     color: #000;
 }
 
+.bool-q {
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: normal;
+    font-size: medium;
+    text-align: left;
+    color: #000;
+}
+
 .star-rating:not(old) {
     display        : inline-block;
     width          : 7.5em;
