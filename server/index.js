@@ -2,7 +2,6 @@ const express = require('express');
 const pg = require('pg');
 const fs = require('fs');
 const bodyParser = require ('body-parser');
-const { release } = require('os');
 
 const server = express();
 server.use(bodyParser.json());
@@ -50,6 +49,7 @@ server.post('/reviews/', function(req, res){
     let handSan = req.body.handSan, masks = req.body.masks, maxOcc = req.body.maxOcc;
     let review_id = parseInt(fs.readFileSync('save.txt', 'utf8'));
     let datetime = new Date();
+    console.log(req.body);
     pool.query(`INSERT INTO reviews VALUES ('${address}', '${placeName}', ${review_id + 1}, ${rating}, ${empMasks}, ${empDist}, ${custMasks}, ${custDist}, '${handSan}', '${masks}', '${datetime.toISOString().slice(0,10)}', '${maxOcc}')`, function(err, client, done){
         if(err){
             console.error('Could not connect to CockroachDB', err);
