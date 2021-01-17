@@ -118,6 +118,24 @@ class Form extends Component {
                   </td>
                 </tr>
                 <tr>
+                <td class="category">Is hand sanitizer provided to customers?</td>
+                  <td class="bool-q">
+                    <label for="sanitizer-y">Yes</label>
+                    <input onChange={this.onChange} id="sanitizer-y" name="handSan" type="radio" value="1" required></input>
+                    <label for="sanitizer-n">No</label>
+                    <input onChange={this.onChange} id="sanitizer-n" name="handSan" type="radio" value="0"></input>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="category">Are masks provided to customers?</td>
+                  <td class="bool-q">
+                    <label for="masks-provided-y">Yes</label>
+                    <input onChange={this.onChange} id="masks-provided-y" name="masks" type="radio" value="1" required></input>
+                    <label for="masks-provided-n">No</label>
+                    <input onChange={this.onChange} id="masks-provided-n" name="masks" type="radio" value="0"></input>
+                  </td>
+                </tr>
+                <tr>
                   <td class="category">Are customers wearing masks?</td>
                   <td>
                     <span class="star-rating">
@@ -153,19 +171,11 @@ class Form extends Component {
                 </tr>
                 <tr>
                   <td class="category">Does this location adhere to maximum occupancy regulations?</td>
-                  <td>
-                    <span class="star-rating">
-                      <input onChange={this.onChange}id="max-occ5" ame="max-occ" type="radio" value="5" required></input>
-                      <label for="max-occ5">5</label>
-                      <input onChange={this.onChange}id="max-occ4" name="maxOcc" type="radio" value="4"></input>
-                      <label for="max-occ4">4</label>
-                      <input onChange={this.onChange}id="max-occ3" name="maxOcc" type="radio" value="3"></input>
-                      <label for="max-occ3">3</label>
-                      <input onChange={this.onChange}id="max-occ2" name="maxOcc" type="radio" value="2"></input>
-                      <label for="max-occ2">2</label>
-                      <input onChange={this.onChange}id="max-occ1" name="maxOcc" type="radio" value="1"></input>
-                      <label for="max-occ1">1</label>
-                    </span>
+                  <td class="bool-q">
+                    <label for="max-occ-y">Yes</label>
+                    <input onChange={this.onChange} id="max-occ-y" name="maxOcc" type="radio" value="1" required></input>
+                    <label for="max-ccc-n">No</label>
+                    <input onChange={this.onChange} id="max-occ-n" name="maxOcc" type="radio" value="0"></input>
                   </td>
                 </tr>
               </tbody>
