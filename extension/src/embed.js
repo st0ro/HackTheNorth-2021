@@ -13,7 +13,7 @@ class InjectApp extends Component {
         <button>
           <div class="ugiz4pqJLAG__content">
             <div class="ugiz4pqJLAG__icon-container"><img class="ugiz4pqJLAG__icon" src={icon} /></div>
-            <div class="ugiz4pqJLAG__text">COVID-19 Safety Customer Reviews > </div>
+            <div class="ugiz4pqJLAG__text">COVID-19 Safety Customer Reviews</div>
           </div>
         </button>
       </div>
