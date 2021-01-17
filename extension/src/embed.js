@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Dock from 'react-dock';
-import icon from './mask.png';
+import icon from './images/mask.png';
 
 class InjectApp extends Component {
 
