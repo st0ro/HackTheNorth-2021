@@ -76,6 +76,5 @@ input[type=submit] {
     font-size: 150%;
     border: 0 none;
     cursor: pointer;
-    -webkit-border-radius: 10px;
     border-radius: 10px;
 }
