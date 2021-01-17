@@ -4,9 +4,9 @@
   "version": "1.1",
   "manifest_version": 2,
   "icons": {
-    "16": "../src/images/mask-16.png",
-    "48": "../src/images/mask-48.png",
-    "128": "../src/images/mask-128.png"
+    "16": "./mask-16.png",
+    "48": "./mask-48.png",
+    "128": "./mask-128.png"
   },
   "background": {
     "scripts": ["app/background.js"]

@@ -5,6 +5,7 @@ class Form extends Component {
     render() {
         return (
           <div id="submit-review">
+            <form method="POST">
             <table>
               <thead>
                 <tr>
@@ -143,6 +144,7 @@ class Form extends Component {
                 </tr>
               </tfoot>
             </table>
+            </form>
           </div>
         );
     }
