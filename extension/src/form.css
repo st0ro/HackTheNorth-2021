@@ -3,29 +3,29 @@ table {
 }
 
 .header {
-    padding: 20px;
+    padding: 15px 10px 15px 10px;
     font-family: "Product Sans", Roboto, Arial, sans-serif;
     font-weight: normal;
-    font-size: 150%;
+    font-size: 1.5em;
     text-align: left;
-    background-color: #1871E8;
+    background-color: #4287f5;
     color: #fff;
 }
 
 .category1 {
-    padding: 10px 10px 15px 15px;
+    padding: 20px 5px 10px 10px;
     font-family: Roboto, Arial, sans-serif;
     font-weight: normal;
-    font-size: medium;
+    font-size: 1.0em;
     text-align: left;
     color: #000;
 }
 
 .category {
-    padding: 10px 10px 10px 15px;
+    padding: 5px 5px 10px 10px;
     font-family: Roboto, Arial, sans-serif;
     font-weight: normal;
-    font-size: medium;
+    font-size: 1.0em;
     text-align: left;
     color: #000;
 }
@@ -69,12 +69,13 @@ table {
 }
 
 input[type=submit] {
-    padding: 5px 15px;
-    background: #1871E8;
+    padding: 10px 20px 10px 20px;
+    background: #4287f5;
     color: #fff;
     font-family: "Product Sans", Roboto, Arial, sans-serif;
-    font-size: 150%;
+    font-size: 1.0em;
     border: 0 none;
+    text-align: center;
     cursor: pointer;
     border-radius: 10px;
 }
